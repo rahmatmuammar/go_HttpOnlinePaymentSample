@@ -1,0 +1,198 @@
+{
+	"info": {
+		"_postman_id": "c37fb85f-f775-4358-b714-1644ae07b552",
+		"name": "Online Payment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phone_number_var\" : \"081234567890\",\n\t\"password_var\" : \"1sampai8\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phone_number_var\" : \"081234567890\",\n\t\"password_var\" : \"1sampai8\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/logout",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"full_name_var\"\t\t: \"Aku Ganteng\",\n\t\"phone_number_var\"  : \"123456789012\",\n\t\"device_name_var\"   : \"Xiaomi Galaxy S20\",\n\t\"email_var\"   \t\t: \"mantap@mantap.com\",\n\t\"photo_base64_txt\"  : \"vsjekgislzkhgslehgi\",\n\t\"latitude_float\"    : 123.342435,\n\t\"longitude_float\"   : -23.322123,\n\t\"password_var\"      : \"1sampai8\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/registration",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"registration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Topup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phone_number_var\" : \"081234567890\",\n\t\"topup_nominal_int\" : 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/topup",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Debit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phone_number_var\" : \"081234567890\",\n\t\"debit_nominal_int\" : 10\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/debit",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"debit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Active Status",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phone_number_var\" : \"081234567890\",\n\t\"active_status_boo\" : true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/change_account_active_status",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"change_account_active_status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Info",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phone_number_var\" : \"081234567890\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/user_info",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user_info"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

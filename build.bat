@@ -1,0 +1,1 @@
+go build -o test.exe server.go
